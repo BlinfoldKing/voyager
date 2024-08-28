@@ -6,7 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 require("lualine").setup({
-	extensions = { "nvim-tree", "fugitive" },
+	extensions = { "nvim-tree", "fugitive", "lspsaga" },
 })
 
 require("nvim-tree").setup({})
@@ -30,3 +30,8 @@ require("noice").setup({
 })
 
 require("gitsigns").setup()
+
+require("toggleterm").setup({
+	start_in_insert = false,
+	open_mapping = "ESC",
+})

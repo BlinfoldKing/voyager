@@ -16,11 +16,16 @@ wk.add({
 
 local keymaps = {
 	-- save
+	-- terminal
+	{ key = "tt", command = "<cmd>ToggleTerm direction=float<cr>", desc = "float" },
+	{ key = "th", command = "<cmd>ToggleTerm size=20 direction=horizontal<cr>", desc = "horizontal" },
+	{ key = "tv", command = "<cmd>ToggleTerm size=50 direction=vertical<cr>", desc = "vertical" },
 	-- lsp
 	{ key = "lh", command = "<cmd>Lspsaga peek_definition<cr>", desc = "hover definition" },
 	{ key = "lr", command = "<cmd>Lspsaga rename<cr>", desc = "rename" },
 	{ key = "lf", command = "<cmd>Lspsaga finder<cr>", desc = "go to definition" },
 	{ key = "lg", command = "<cmd>Lspsaga goto_definition<cr>", desc = "find symbol" },
+	{ key = "lo", command = "<cmd>Lspsaga outline<cr>", desc = "find symbol" },
 	-- find
 	{ key = "ff", command = "<cmd>Telescope find_files<cr>", desc = "search files" },
 	{ key = "fb", command = "<cmd>Telescope buffers<cr>", desc = "search buffers" },

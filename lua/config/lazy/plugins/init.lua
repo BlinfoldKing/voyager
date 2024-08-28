@@ -12,11 +12,24 @@ return {
 	"nvimtools/none-ls.nvim",
 	{ import = "config.lazy.plugins.lspsaga" },
 
+	-- text editting
+	"numToStr/Comment.nvim",
+	{
+		"kylechui/nvim-surround",
+		version = "*",
+		event = "VeryLazy",
+	},
+
+	-- git
+	"tpope/vim-fugitive",
+	"lewis6991/gitsigns.nvim",
+	"sindrets/diffview.nvim",
+	"akinsho/git-conflict.nvim",
+
 	-- editor
 	"karb94/neoscroll.nvim",
 	"nvim-tree/nvim-web-devicons",
 	"nvim-tree/nvim-tree.lua",
-	"lewis6991/gitsigns.nvim",
 	"nvim-lualine/lualine.nvim",
 	{
 		"romgrk/barbar.nvim",
@@ -27,6 +40,7 @@ return {
 	{ "ms-jpq/chadtree" },
 	{ "nvim-telescope/telescope.nvim", tag = "0.1.8" },
 	{ import = "config.lazy.plugins.noice" },
+	"akinsho/toggleterm.nvim",
 
 	-- keymap and control
 	{ "folke/which-key.nvim", event = "VeryLazy", opts = { sort = { "manual" } } },
