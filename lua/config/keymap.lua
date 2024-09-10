@@ -25,6 +25,7 @@ local keymaps = {
 	{ key = "lr", command = "<cmd>Lspsaga rename<cr>", desc = "rename" },
 	{ key = "lf", command = "<cmd>Lspsaga finder<cr>", desc = "go to definition" },
 	{ key = "lg", command = "<cmd>Lspsaga goto_definition<cr>", desc = "find symbol" },
+	{ key = "lp", command = "<cmd>Lspsaga goto_definition<cr>", desc = "find symbol" },
 	{ key = "lo", command = "<cmd>Lspsaga outline<cr>", desc = "find symbol" },
 	-- find
 	{ key = "ff", command = "<cmd>Telescope find_files<cr>", desc = "search files" },

@@ -4,13 +4,22 @@ return {
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 
 	-- languages
-	{ import = "config.lazy.plugins.coq" },
+	"neovim/nvim-lspconfig", -- REQUIRED: for native Neovim LSP integration
 	"williamboman/mason.nvim",
 	"nvim-treesitter/nvim-treesitter",
 	"williamboman/mason-lspconfig.nvim",
 	"jay-babu/mason-null-ls.nvim",
 	"nvimtools/none-ls.nvim",
 	{ import = "config.lazy.plugins.lspsaga" },
+	-- completion
+	"hrsh7th/nvim-cmp",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path",
+	"hrsh7th/cmp-cmdline",
+	"hrsh7th/cmp-nvim-lua",
+	"L3MON4D3/LuaSnip",
+	"onsails/lspkind.nvim",
 
 	-- text editting
 	"numToStr/Comment.nvim",
