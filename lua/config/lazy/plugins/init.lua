@@ -34,6 +34,7 @@ return {
 	"lewis6991/gitsigns.nvim",
 	"sindrets/diffview.nvim",
 	"akinsho/git-conflict.nvim",
+	"sindrets/diffview.nvim",
 
 	-- editor
 	"karb94/neoscroll.nvim",
@@ -46,10 +47,10 @@ return {
 			vim.g.barbar_auto_setup = true
 		end,
 	},
-	{ "ms-jpq/chadtree" },
 	{ "nvim-telescope/telescope.nvim", tag = "0.1.8" },
 	{ import = "config.lazy.plugins.noice" },
 	"akinsho/toggleterm.nvim",
+	"3rd/image.nvim",
 
 	-- keymap and control
 	{ "folke/which-key.nvim", event = "VeryLazy", opts = { sort = { "manual" } } },
